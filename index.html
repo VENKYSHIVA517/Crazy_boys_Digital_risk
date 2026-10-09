@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7f4">
+    <meta name="description" content="A digital safety workspace for reviewing suspicious links, messages, apps, and impersonation signals.">
+    <title>Sentinel | Digital Risk Protection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login-screen" id="login-screen" aria-labelledby="login-title">
+        <div class="login-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="shield-illustration"><span>✓</span></div><span class="art-label art-label-one">IDENTITY SIGNALS <i></i></span><span class="art-label art-label-two">RISK ENGINE <i></i></span><span class="art-label art-label-three">LOCAL ANALYSIS <i></i></span></div>
+        <div class="login-content">
+            <a class="wordmark" href="#login" aria-label="Sentinel home"><span class="wordmark-mark">S</span>sentinel<span class="wordmark-dot">.</span></a>
+            <div class="login-copy"><span class="kicker"><i></i> PERSONAL DIGITAL DEFENSE</span><h1 id="login-title">Your digital world,<br>with a little more <em>clarity.</em></h1><p>Review suspicious links, messages, apps, and online activity from one calm, clear workspace.</p></div>
+            <form class="login-form" id="login-form">
+                <label for="login-email">Work email</label><input id="login-email" type="email" value="jordan@northstar.example" autocomplete="username" required>
+                <label for="login-password">Password</label><input id="login-password" type="password" placeholder="Enter any password for this demo" autocomplete="current-password" required>
+                <button class="primary-button login-submit" type="submit">Enter demo workspace <span aria-hidden="true">→</span></button>
+                <p class="local-note"><span>●</span> Demo sign-in only. Nothing is sent or authenticated.</p>
+            </form>
+            <p class="login-footer">SENTINEL PERSONAL · PREVIEW BUILD</p>
+        </div>
+    </section>
+
+    <div class="platform-shell" id="platform-shell" hidden>
+        <aside class="app-sidebar" aria-label="Main navigation">
+            <a class="wordmark sidebar-wordmark" href="#overview" data-view-link="overview"><span class="wordmark-mark">S</span>sentinel<span class="wordmark-dot">.</span></a>
+            <div class="workspace-switch"><span class="workspace-avatar">JD</span><span><strong>Jordan's workspace</strong><small>Personal protection</small></span><span class="switch-chevron">⌄</span></div>
+            <p class="nav-caption">PROTECT</p>
+            <nav class="primary-nav" aria-label="Protection modules">
+                <a class="nav-item is-active" href="#overview" data-view-link="overview" aria-current="page"><span class="nav-glyph">▦</span>Overview</a>
+                <a class="nav-item" href="#monitoring" data-view-link="monitoring"><span class="nav-glyph">◉</span>Monitoring<span class="nav-live-dot"></span></a>
+                <a class="nav-item" href="#intelligence" data-view-link="intelligence"><span class="nav-glyph">⌁</span>Threat intelligence</a>
+                <a class="nav-item" href="#url-scanner" data-view-link="url-scanner"><span class="nav-glyph">⌕</span>URL scanner</a>
+                <a class="nav-item" href="#messages" data-view-link="messages"><span class="nav-glyph">✉</span>Email &amp; SMS</a>
+                <a class="nav-item" href="#apps" data-view-link="apps"><span class="nav-glyph">▤</span>App monitoring</a>
+                <a class="nav-item" href="#brands" data-view-link="brands"><span class="nav-glyph">◎</span>Brand protection</a>
+                <a class="nav-item" href="#alerts" data-view-link="alerts"><span class="nav-glyph">♧</span>Alerts<span class="nav-counter" id="nav-alert-count">4</span></a>
+                <a class="nav-item" href="#reports" data-view-link="reports"><span class="nav-glyph">▥</span>Reports</a>
+                <a class="nav-item mobile-settings-link" href="#settings" data-view-link="settings"><span class="nav-glyph">⚙</span>Settings</a>
+            </nav>
+            <div class="sidebar-foot"><a class="nav-item" href="#settings" data-view-link="settings"><span class="nav-glyph">⚙</span>Settings</a><div class="sidebar-demo"><span class="demo-pulse"></span><span><strong>Demo monitoring</strong><small>No devices connected</small></span></div><button class="account-button" id="sign-out" type="button"><span class="workspace-avatar account-avatar">JD</span><span><strong id="account-name">Jordan Davis</strong><small>Sign out of demo</small></span><span class="account-more">···</span></button></div>
+        </aside>
+
+        <main class="workspace-main">
+            <header class="page-topbar"><div class="topbar-context"><span>PERSONAL WORKSPACE</span><span class="context-divider">/</span><strong id="topbar-title">Overview</strong></div><div class="topbar-tools"><span class="monitor-chip"><i></i><span id="topbar-monitor-status">Demo active</span></span><button class="assistant-trigger" id="assistant-open" type="button"><span>✳</span> Ask Sentinel</button><button class="topbar-icon" id="alerts-shortcut" type="button" aria-label="Open alerts" title="Open alerts"><span>♧</span><i id="topbar-alert-dot"></i></button><span class="topbar-avatar" id="topbar-avatar">JD</span></div></header>
+            <div class="page-content">
+                <section class="page-view is-visible" data-page="overview">
+                    <div class="welcome-row"><div><p class="eyebrow">THURSDAY, OCTOBER 8, 2026 <span class="eyebrow-dot"></span> DEMO DATA</p><h1>Good morning, <span id="greeting-name">Jordan</span></h1><p class="subheading">Here’s the current picture of your digital safety.</p></div><button class="outline-button" data-go="reports" type="button"><span>↓</span> Export report</button></div>
+                    <div class="overview-grid">
+                        <article class="safety-panel"><div class="safety-top"><div><p class="eyebrow">OVERALL SAFETY SCORE</p><h2>A strong baseline.<br><span>Stay thoughtfully alert.</span></h2></div><span class="sample-tag">SAMPLE</span></div><div class="score-layout"><div class="score-ring" aria-label="Safety score 92 out of 100"><div><strong id="safety-score">92</strong><span>OUT OF 100</span></div></div><div class="score-detail"><span class="risk-pill low"><i></i>Low risk</span><p>Your demo workspace has a healthy safety baseline. Keep checking unexpected links and messages.</p><button class="text-link" data-go="monitoring" type="button">Review coverage <span>→</span></button></div></div><div class="score-footer"><span><i class="status-dot"></i> Last reviewed <strong id="last-reviewed">just now</strong></span><span>HEURISTIC ESTIMATE</span></div></article>
+                        <div class="stat-stack"><article class="stat-panel"><div class="stat-icon stat-icon-coral">!</div><div><span>Threats detected</span><strong id="threat-count">04</strong><small><b class="trend-negative">2 high risk</b> in sample alerts</small></div><span class="stat-arrow">↗</span></article><article class="stat-panel"><div class="stat-icon stat-icon-green">↗</div><div><span>Protected activities</span><strong id="activity-count">128</strong><small><b class="trend-positive">+18%</b> this week</small></div><span class="stat-arrow">↗</span></article><article class="stat-panel"><div class="stat-icon stat-icon-blue">◉</div><div><span>Protection coverage</span><strong>5 <small>/ 8</small></strong><small>3 sources need connection</small></div><button class="mini-link" data-go="monitoring" type="button" aria-label="Review coverage">→</button></article></div>
+                    </div>
+                    <div class="section-title-row"><div><p class="eyebrow">SIGNALS, NOT NOISE</p><h2>Recent alerts</h2></div><button class="text-link" data-go="alerts" type="button">View all alerts <span>→</span></button></div>
+                    <div class="overview-alerts" id="overview-alerts"></div>
+                    <div class="dashboard-bottom"><section class="trend-panel"><div class="panel-heading"><div><p class="eyebrow">ACTIVITY OVER TIME</p><h2>Threat trends</h2></div><span class="chart-legend"><i></i> Flagged activity</span></div><div class="trend-chart" id="overview-chart" role="img" aria-label="Sample threat trend chart"></div><div class="chart-foot"><span>Sample activity, last 7 days</span><button class="text-link" data-go="reports" type="button">Open reports <span>→</span></button></div></section><section class="recommendation-panel"><div class="panel-heading"><div><p class="eyebrow">NEXT BEST STEP</p><h2>Security recommendations</h2></div><span class="recommendation-count">02</span></div><article class="recommendation-item"><span class="recommendation-number">01</span><div><h3>Connect your email protection</h3><p>Review suspicious messages before opening links.</p><button class="text-link" data-go="messages" type="button">Set up email checks <span>→</span></button></div></article><article class="recommendation-item"><span class="recommendation-number">02</span><div><h3>Check a link before you tap</h3><p>Paste an unexpected URL for a quick local review.</p><button class="text-link" data-go="url-scanner" type="button">Scan a URL <span>→</span></button></div></article></section></div>
+                    <footer class="platform-disclaimer"><span>ⓘ</span> Sample dashboard data. No accounts, devices, messages, apps, or transactions are connected. Risk checks run locally and are not a substitute for security software.</footer>
+                </section>
+
+                <section class="page-view" data-page="monitoring">
+                    <div class="view-heading"><div><p class="eyebrow">YOUR DIGITAL FOOTPRINT</p><h1>Monitoring</h1><p class="subheading">Choose which activity sources you want to review in this workspace.</p></div><button class="primary-button" id="monitoring-toggle" type="button"><span class="button-state-dot"></span><span id="monitoring-toggle-label">Pause demo</span></button></div>
+                    <div class="notice-banner"><span class="notice-mark">i</span><p><strong>Simulation only.</strong> This preview does not connect to a browser, inbox, phone, social account, or payment provider. Use the manual scanners to inspect sample content.</p><span class="live-chip"><i></i> DEMO</span></div>
+                    <div class="module-summary"><span class="summary-number">05</span><span>activity sources shown</span><span class="summary-divider"></span><span class="summary-number muted-number">00</span><span>connected integrations</span></div>
+                    <div class="source-list" id="source-list"></div>
+                    <section class="monitoring-timeline"><div class="panel-heading"><div><p class="eyebrow">LOCAL PREVIEW</p><h2>Recent activity</h2></div><span class="sample-tag">SIMULATED</span></div><div id="monitoring-activity" class="timeline-list"></div></section>
+                </section>
+
+                <section class="page-view" data-page="intelligence">
+                    <div class="view-heading"><div><p class="eyebrow">EXTERNAL SIGNALS</p><h1>Threat intelligence</h1><p class="subheading">A sample feed of patterns worth knowing about.</p></div><span class="sample-tag">SAMPLE FEED</span></div>
+                    <div class="notice-banner"><span class="notice-mark">i</span><p>These advisories are illustrative examples. No live intelligence source is connected.</p></div>
+                    <div class="intel-filters" role="group" aria-label="Filter threat intelligence"><button class="filter-chip is-selected" data-intel-filter="all" type="button">All signals <span>04</span></button><button class="filter-chip" data-intel-filter="phishing" type="button">Phishing</button><button class="filter-chip" data-intel-filter="impersonation" type="button">Impersonation</button><button class="filter-chip" data-intel-filter="malware" type="button">Malware</button></div>
+                    <div class="intel-list" id="intel-list"></div>
+                </section>
+
+                <section class="page-view" data-page="url-scanner">
+                    <div class="view-heading"><div><p class="eyebrow">MANUAL CHECK</p><h1>URL scanner</h1><p class="subheading">Review a link before opening it. The check stays in your browser.</p></div><span class="local-chip"><i></i> LOCAL ANALYSIS</span></div>
+                    <section class="scanner-workspace"><div class="scanner-heading"><div class="scanner-icon">⌕</div><div><h2>Inspect a link</h2><p>We’ll look for common phishing and impersonation warning signs.</p></div></div><form class="scan-form" data-scan-form data-scan-mode="url"><label for="url-input">Website address</label><div class="scan-input-row"><input id="url-input" name="target" type="text" placeholder="https://example.com" autocomplete="url" required><button class="primary-button" type="submit">Analyze link <span>→</span></button></div><p class="field-hint">Do not paste private links, password-reset links, or URLs containing personal tokens.</p></form><div class="scan-result" id="url-result" aria-live="polite" hidden></div></section>
+                    <div class="scanner-guidance"><div><span class="guidance-icon">01</span><h3>Look at the whole domain</h3><p>Small spelling changes can disguise a familiar brand.</p></div><div><span class="guidance-icon">02</span><h3>Pause on urgency</h3><p>Unexpected pressure to sign in or pay is a useful warning sign.</p></div><div><span class="guidance-icon">03</span><h3>A score is not proof</h3><p>A low score cannot guarantee a site is safe or legitimate.</p></div></div>
+                </section>
+
+                <section class="page-view" data-page="messages">
+                    <div class="view-heading"><div><p class="eyebrow">MESSAGE REVIEW</p><h1>Email &amp; SMS protection</h1><p class="subheading">Check message wording and included links for common scam signals.</p></div><span class="local-chip"><i></i> NOTHING UPLOADED</span></div>
+                    <section class="scanner-workspace"><div class="scanner-heading"><div class="scanner-icon">✉</div><div><h2>Inspect a message</h2><p>Paste text only. Remove names, addresses, codes, and other private details first.</p></div></div><div class="mode-tabs" role="tablist" aria-label="Message type"><button class="mode-tab is-active" id="email-mode" role="tab" aria-selected="true" data-message-mode="email" type="button">Email</button><button class="mode-tab" id="sms-mode" role="tab" aria-selected="false" data-message-mode="sms" type="button">SMS / text</button></div><form class="scan-form message-scan-form" data-scan-form data-scan-mode="email"><label for="message-input">Message content</label><textarea id="message-input" name="target" rows="6" placeholder="Paste message text here. Include the sender line or link if relevant…" required></textarea><div class="scan-input-row"><p class="field-hint">Analysis happens in this tab. Text is not sent to a server.</p><button class="primary-button" type="submit">Review message <span>→</span></button></div></form><div class="scan-result" id="message-result" aria-live="polite" hidden></div></section>
+                    <div class="privacy-note"><span>⌑</span><p><strong>Keep sensitive details out.</strong> This demo does not transmit text, but real messages may contain private information. Redact it before pasting.</p></div>
+                </section>
+
+                <section class="page-view" data-page="apps">
+                    <div class="view-heading"><div><p class="eyebrow">APPLICATION HYGIENE</p><h1>App monitoring</h1><p class="subheading">Review app permissions and installation sources in this sample inventory.</p></div><span class="sample-tag">SAMPLE INVENTORY</span></div>
+                    <div class="notice-banner"><span class="notice-mark">i</span><p>Sentinel cannot inspect installed apps from this webpage. These entries are examples for the demo only.</p></div>
+                    <div class="app-table-wrap"><table class="data-table"><thead><tr><th>APPLICATION</th><th>INSTALL SOURCE</th><th>PERMISSION REVIEW</th><th>ASSESSMENT</th><th></th></tr></thead><tbody id="app-table-body"></tbody></table></div>
+                    <section class="permission-note"><div class="permission-icon">⌑</div><div><h2>Review permissions with care</h2><p>Unexpected access to contacts, accessibility controls, or SMS can increase impact if an app is compromised. Check the publisher and store listing independently.</p></div></section>
+                </section>
+
+                <section class="page-view" data-page="brands">
+                    <div class="view-heading"><div><p class="eyebrow">IDENTITY &amp; REPUTATION</p><h1>Brand impersonation detection</h1><p class="subheading">Explore sample lookalike-domain signals for a brand name.</p></div><span class="sample-tag">DEMO MATCHES</span></div>
+                    <section class="brand-search-panel"><label for="brand-input">Brand or organization</label><form class="brand-search-form" id="brand-search-form"><input id="brand-input" type="text" value="Northstar" placeholder="e.g. Northstar" required><button class="primary-button" type="submit">Check for lookalikes <span>→</span></button></form><p class="field-hint">Example results are generated locally and are not domain registrations or live detections.</p></section>
+                    <div class="brand-results-heading"><div><p class="eyebrow">POTENTIAL LOOKALIKES</p><h2 id="brand-results-title">Signals for Northstar</h2></div><span class="result-count" id="brand-result-count">03 signals</span></div><div class="brand-results" id="brand-results"></div>
+                </section>
+
+                <section class="page-view" data-page="alerts">
+                    <div class="view-heading"><div><p class="eyebrow">THREAT RESPONSE</p><h1>Alerts</h1><p class="subheading">Triage sample alerts and choose a response for each finding.</p></div><button class="outline-button" id="mark-all-reviewed" type="button">Mark all reviewed</button></div>
+                    <div class="alert-filter-row" role="group" aria-label="Filter alerts"><button class="filter-chip is-selected" data-alert-filter="all" type="button">All <span id="all-alert-count">04</span></button><button class="filter-chip" data-alert-filter="high" type="button">High risk</button><button class="filter-chip" data-alert-filter="medium" type="button">Medium risk</button><button class="filter-chip" data-alert-filter="new" type="button">Needs review</button></div><div class="alert-feed" id="alerts-list"></div>
+                </section>
+
+                <section class="page-view" data-page="reports">
+                    <div class="view-heading"><div><p class="eyebrow">YOUR SECURITY POSTURE</p><h1>Reports</h1><p class="subheading">A concise view of reviewed activity in this demo workspace.</p></div><button class="primary-button" id="export-report" type="button"><span>↓</span> Download CSV</button></div>
+                    <div class="report-metrics"><div><span>Activities reviewed</span><strong id="report-activity-count">128</strong><small>Sample total</small></div><div><span>Threats identified</span><strong id="report-threat-count">04</strong><small>Across sample signals</small></div><div><span>High-risk findings</span><strong id="report-high-count">02</strong><small>Review recommended</small></div><div><span>Safety score</span><strong>92<small>/100</small></strong><small>Heuristic estimate</small></div></div>
+                    <section class="report-chart-panel"><div class="panel-heading"><div><p class="eyebrow">RISK ACTIVITY</p><h2>Flagged signals over time</h2></div><div class="range-control" role="group" aria-label="Chart time range"><button class="range-button is-active" data-range="7" type="button">7 days</button><button class="range-button" data-range="30" type="button">30 days</button></div></div><div class="report-chart" id="report-chart" role="img" aria-label="Sample flagged activity chart"></div><div class="chart-foot"><span>Illustrative data, not connected telemetry</span><span class="chart-legend"><i></i> Risk signals</span></div></section><p class="report-footnote">Reports include sample alerts and any checks performed in this browser session. They are not an audit record.</p>
+                </section>
+
+                <section class="page-view" data-page="settings">
+                    <div class="view-heading"><div><p class="eyebrow">WORKSPACE PREFERENCES</p><h1>Settings</h1><p class="subheading">Choose how this demo workspace displays local checks and alerts.</p></div><button class="primary-button" id="save-settings" type="button">Save preferences <span>✓</span></button></div>
+                    <div class="settings-layout"><nav class="settings-nav" aria-label="Settings sections"><a href="#profile-settings">Profile</a><a href="#alert-settings">Alert preferences</a><a href="#privacy-settings">Privacy &amp; data</a></nav><div class="settings-content"><section class="settings-section" id="profile-settings"><p class="eyebrow">PROFILE</p><h2>Your workspace</h2><label class="setting-field">Display name<input id="settings-name" type="text" value="Jordan Davis"></label><label class="setting-field">Email address<input id="settings-email" type="email" value="jordan@northstar.example"></label></section><section class="settings-section" id="alert-settings"><p class="eyebrow">ALERT PREFERENCES</p><h2>What should stand out?</h2><div class="preference-row"><span><strong>High-risk alerts</strong><small>Show prominent indicators for high-risk findings.</small></span><button class="toggle-switch is-on" type="button" data-setting-toggle aria-pressed="true" aria-label="Toggle high-risk alerts"><i></i></button></div><div class="preference-row"><span><strong>Include sample advisories</strong><small>Display illustrative threat-intelligence signals.</small></span><button class="toggle-switch is-on" type="button" data-setting-toggle aria-pressed="true" aria-label="Toggle sample advisories"><i></i></button></div><div class="preference-row"><span><strong>Reduced motion</strong><small>Limit non-essential interface animation.</small></span><button class="toggle-switch" type="button" data-setting-toggle aria-pressed="false" aria-label="Toggle reduced motion"><i></i></button></div></section><section class="settings-section" id="privacy-settings"><p class="eyebrow">PRIVACY &amp; DATA</p><h2>Local-first preview</h2><div class="privacy-status"><span class="privacy-status-icon">✓</span><div><strong>Checks run in this browser</strong><p>There is no backend, connected account, device integration, or live threat feed in this preview. Form text is used for the displayed result only.</p></div></div><button class="text-link" id="clear-session" type="button">Clear this session’s scan history <span>→</span></button></section></div></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <aside class="assistant-panel" id="assistant-panel" aria-labelledby="assistant-title" hidden>
+        <div class="assistant-heading"><div><span class="assistant-spark">✳</span><div><h2 id="assistant-title">Sentinel assistant</h2><p>Plain-language risk explanations</p></div></div><button class="close-button" id="assistant-close" type="button" aria-label="Close assistant">×</button></div><div class="assistant-demo-label"><i></i> LOCAL EXPLAINER · DEMO</div><div class="assistant-messages" id="assistant-messages" aria-live="polite"><div class="assistant-message assistant-response">Hi Jordan. Ask me about a finding, or I can explain the latest alert in everyday language.</div></div><form class="assistant-form" id="assistant-form"><input id="assistant-input" type="text" placeholder="Ask about a risk…" aria-label="Ask the security assistant" required><button type="submit" aria-label="Send question">↑</button></form><p class="assistant-disclaimer">Rule-based preview. Not an AI service or security advice.</p>
+    </aside>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <dialog class="threat-dialog" id="threat-dialog"><form method="dialog"><button class="close-button dialog-close" aria-label="Close details">×</button></form><div id="threat-dialog-content"></div></dialog>
+    <script src="script.js"></script>
+</body>
+</html>
